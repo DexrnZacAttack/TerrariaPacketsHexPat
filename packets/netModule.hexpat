@@ -28,7 +28,8 @@ struct NMNetworkText {
     NetworkTextMode mode;
     u8 textSize;
     char text[textSize];
-    if (mode != NetworkTextMode.LITERAL) {
+
+    if (mode != NetworkTextMode::LITERAL) {
         u8 substitutionList;
         NMNetworkText nmt[substitutionList];
     }

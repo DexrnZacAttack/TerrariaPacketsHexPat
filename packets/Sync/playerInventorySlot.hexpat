@@ -3,6 +3,6 @@ struct PlayerInventorySlot {
     u8 playerID;
     u16 slotID;
     u16 stack;
-    u8 prefix;
-    u16 itemID;
-};
+    PrefixIDs prefix;
+    ItemIDs itemID;
+} [[name(std::string::to_string(prefix) + " " + std::string::to_string(itemID) + " (" + std::string::to_string(stack) + ")")]];

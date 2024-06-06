@@ -1,5 +1,5 @@
 #pragma combinerName doorToggle
-enum Action : u8 {
+enum doorAction : u8 {
     OPEN_DOOR = 0,
     CLOSE_DOOR = 1,
     OPEN_TRAPDOOR = 2,
@@ -9,7 +9,7 @@ enum Action : u8 {
 };
 
 struct doorToggle {
-    Action action;
+    doorAction action;
     u16 tileX;
     u16 tileY;
     u8 direction; // DO THIS LATER.
